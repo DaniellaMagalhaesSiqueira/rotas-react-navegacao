@@ -1,0 +1,42 @@
+.Menu {
+    display: flex;
+    /* flex-basis largura */
+    flex-basis: 250px;
+
+    background-color: #1e90ff;
+
+
+}
+
+.Menu nav {
+    flex: 1;
+}
+
+.Menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Menu li{
+    display: flex;
+
+}
+
+/* 
+Nesse caso significa que a tag a precisa estar diretamente dentro da tag li para pegar o css
+.Menu li > a {
+
+} */
+/* Nesse caso a  tag a tem que estar dentro de li e li tem que estar dentro de menu*/
+.Menu li a {
+    margin-bottom: 10px;
+    padding: 10px;
+    flex: 1;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.Menu li a:hover {
+    background-color: #00000030;
+}   
